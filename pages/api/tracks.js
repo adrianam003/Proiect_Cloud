@@ -28,7 +28,7 @@ const putTrack = async (track) => {
 
 const deleteTrack = async (id) => {
 	const collection = await getCollection(COLLECTION_NAME);
-	return collection.deleteOne({_id: new ObjectId(id)});
+	return await collection.deleteOne({_id: new ObjectId(id)});
 }
 
 export default async function handler(req, res) {
