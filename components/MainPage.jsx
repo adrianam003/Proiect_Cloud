@@ -43,10 +43,12 @@ const MainPage = () => {
     if (isLoading) return <Spinner />;
 
     return (
-        <div className="p-4 flex flex-wrap gap-4 ">
+        <div className="p-4 flex flex-wrap gap-4 "style={{ backgroundColor: '#F3F4F6' }}>
             {data?.map((track) => (
 
-                    <div key={track._id} className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    <div key={track._id} className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+                    style={{
+                        background: 'linear-gradient(to bottom right, #48BB78, #81E6D9)'}}>
 
                         <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                             {track.name}

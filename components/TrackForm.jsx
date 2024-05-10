@@ -15,7 +15,10 @@ const TrackForm = (props) => {
     console.log(data);
     return (
         <div className="p-4">
-        <div className="flex flex-col mx-auto max-w-80 border p-4 shadow-sm gap-4 w-full">
+        <div className="bg-gradient-to-r from-blue-200 via-cyan-300 to-green-400 p-4 rounded-lg shadow-md">
+        <div className="flex flex-col mx-auto max-w-80 border p-4 shadow-sm gap-4 w-full"
+        style={{
+            background: 'linear-gradient(to bottom right, #48BB78, #81E6D9)'}}>
         <div className="text-center font-bold text-xl">{entry._id ? 'Update' : 'Create new'} Track</div>
         <div>
           <label
@@ -54,20 +57,22 @@ const TrackForm = (props) => {
           <button
             type="button"
             onClick={handleCancel}
-            className="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+            className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
           >
             Cancel
           </button>
           <button
             type="button"
             onClick={() => onSubmit(data)}
-            className="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+            className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
           >
             {entry?._id ? "Update" : "Create"}
           </button>
         </div>
       </div>
         </div>
+        </div>
+        
     )
 }
 
