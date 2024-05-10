@@ -6,7 +6,7 @@ const TrackForm = (props) => {
     const {entry, onSubmit} = props;
     const [data, setData] = useState(entry);
     const handleChange =(type, value) =>{
-        setData({...entry, [type]:value})
+        setData({...data, [type]:value})
     }
     const handleCancel = () => {
         router.push("/");
