@@ -105,4 +105,4 @@ Tehnologia modernă utilizată asigură o performanță rapidă, o scalabilitate
 Referinte:
 Link github : https://github.com/adrianam003/Proiect_Cloud
 Link aplicatie : https://proiect-cloud-iota.vercel.app/ 
-Link prezentare : 
+Link prezentare : https://youtu.be/fBytPa-fil8 
